@@ -16,7 +16,7 @@ export enum OpenAIModelID {
 }
 
 // in case the `DEFAULT_MODEL` environment variable is not set or set to an unsupported model
-export const fallbackModelID = OpenAIModelID.OPENCHAT_3_2_MISTRAL;
+export const fallbackModelID = OpenAIModelID.OPENCHAT_3_6;
 
 export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
   // OpenChat
