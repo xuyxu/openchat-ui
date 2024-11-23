@@ -4,10 +4,6 @@ import { OpenAIModelID, OpenAITokenizers } from '@/types/openai'
 
 import { ChatBody, Message } from '@/types/chat';
 
-export const config = {
-  runtime: 'edge',
-};
-
 const handler = async (req: Request): Promise<Response> => {
   try {
     const { model, messages, key, prompt, temperature } = (await req.json()) as ChatBody;

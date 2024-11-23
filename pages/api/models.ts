@@ -2,10 +2,6 @@ import { OPENAI_API_HOST, OPENAI_API_TYPE, OPENAI_API_VERSION, OPENAI_ORGANIZATI
 
 import { OpenAIModel, OpenAIModelID, OpenAIModels } from '@/types/openai';
 
-export const config = {
-  runtime: 'edge',
-};
-
 const handler = async (req: Request): Promise<Response> => {
   try {
     const { key } = (await req.json()) as {
